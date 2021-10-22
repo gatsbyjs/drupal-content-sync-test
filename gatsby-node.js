@@ -12,9 +12,6 @@ const createDrupalPages = async gatsbyApi => {
         nodes {
           id
           title
-          path {
-            alias
-          }
           promote
         }
       }
@@ -27,7 +24,7 @@ const createDrupalPages = async gatsbyApi => {
   console.log({nodes})
   nodes.forEach(post => {
     actions.createPage({
-      path: `/drupal-blog${post.path.alias}`,
+      path: `/drupal-blog${post.id}`,
       context: {
         id: post.id,
       },

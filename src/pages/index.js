@@ -14,8 +14,8 @@ const IndexPage = ({ data }) => (
         {data.allNodeArticle.nodes.map(node => (
           <>
           <Link
-            to={`/drupal-blog${node.path.alias}`}
-            key={node.path.alias}
+            to={`/drupal-blog${node.id}`}
+            key={node.id}
           >
             {node.title}
           </Link>
@@ -37,9 +37,6 @@ export const query = graphql`
         id
         title
         created
-        path {
-          alias
-        }
       }
     }
   }
