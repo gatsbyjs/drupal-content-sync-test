@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sharp": "next",
     "gatsby-plugin-ts": "^3.0.0",
-    "gatsby-source-drupal": "^5.0.0",
+    "gatsby-source-drupal": "5.1.0-alpha-drupal-node-manifests.33+5261c7e358",
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-transformer-sharp": "^3.14.0",
     "prop-types": "^15.7.2",
